@@ -13,6 +13,7 @@ class Usuarios extends Conexion
     {
     }
 
+
     //Getters y Setters
     public function getCon()
     {
@@ -26,9 +27,5 @@ class Usuarios extends Conexion
         return $this;
     }
 }
-
-
-
-
 
 ?>
