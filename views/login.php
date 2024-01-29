@@ -10,16 +10,9 @@
 
 <body>
 
-    <form method="POST" style="float:right;" action="login.php">
-        <label for="usu">Usuario</label><br>
-        <input type="text" name="usu" id="usu" /><br><br>
-        <label for="pass">Contraseña</label><br>
-        <input type="password" name="pass" id="pass" /><br><br>
-        <input type="submit" value="Login">
-    </form>
-
     <?php
     session_start();
+    include "./elementosComunes/barraSuperior.php";
     include "../php/bd/usuariosRepository.php";
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST["usu"]) && isset($_POST["pass"])) {
@@ -41,6 +34,14 @@
  
 
     ?>
+     <form method="POST" style="margin-top:20%;margin-left:40%;" action="login.php">
+        <label for="usu">Usuario</label><br>
+        <input type="text" name="usu" id="usu" /><br><br>
+        <label for="pass">Contraseña</label><br>
+        <input type="password" name="pass" id="pass" /><br><br>
+        <input type="submit" value="Login">
+    </form>
+
 </body>
 
 </html>
