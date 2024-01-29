@@ -11,7 +11,6 @@
 <body>
 
     <?php
-    session_start();
     include "./elementosComunes/barraSuperior.php";
     include "../php/bd/usuariosRepository.php";
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
