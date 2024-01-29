@@ -18,11 +18,10 @@ class Conexion
 
 
    //Función que conecta a la bbdd y si no fuese posible captura el error.
-   function conectaBD()
+   public function conectaBD()
    {
       try {
          $this->bd = new PDO($this->dsn, $this->usuario, $this->clave);
-         echo "Conexión establecida.";
       } catch (Exception $e) {
          echo "Falló en la conexión: " . $e->getMessage();
 

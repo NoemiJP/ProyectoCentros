@@ -10,9 +10,17 @@
 
 <body>
     <?php
-    include "../php/bd/conexion.php";
-    $conectar = new Conexion("mysql:dbmname=....;host=localhost", "usuario...", "clave=....");
-    $conectar->conectaBD();
+    session_start();
+    include "../php/bd/usuariosRepository.php";
+    $usuarioRepository = new UsuariosRepository("mysql:dbname=practicacentros;host=127.0.0.1;port=3307","root","");
+    $usuarios = $usuarioRepository->recuperarUsuario("admin","admin");
+    if(count($usuarios) > 0){
+        // Usuario Existe
+        $_SESSION["usuario"]=$usuarios[0];
+    } else{
+        // Usuario no existe, devolver error al formulario
+        
+    }
     //$conectar->cerrarConexion();
 
 
