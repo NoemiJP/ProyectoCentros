@@ -10,16 +10,15 @@
 
 <body>
     <?php
-    include "../php/bd/conexion.php";
-    $conectar = new Conexion("mysql:dbmname=....;host=localhost", "usuario...", "clave=....");
-    $conectar->conectaBD();
-    //$conectar->cerrarConexion();
+    session_start();
+    $usuarioLogueado = $_SESSION["usuario"];
 
-
+    
     //Aqui irá nuestro código html para la portada de la web.
 
 
     ?>
+    <p>Hola <?php echo $usuarioLogueado?></p>
 </body>
 
 </html>

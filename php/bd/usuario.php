@@ -1,5 +1,6 @@
 <?php
-class Usuario{
+class Usuario
+{
 
     private $usuario;
     private $contrasena;
@@ -8,7 +9,7 @@ class Usuario{
 
     private $centro;
 
-    
+
 
     /**
      * Get the value of usuario
