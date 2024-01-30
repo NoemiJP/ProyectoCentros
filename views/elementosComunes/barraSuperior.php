@@ -38,6 +38,9 @@
         } else {
             echo "<a class=\"inactive\">Hola " . $usuarioLogueado . "</a>";
         }
+        if ($usuarioLogueado != "Invitado") {
+            echo "<a class=\"inactive\" href=\"/views/logout.php\">Cerrar Sesión</a>";
+        }
         ?>
     </nav>
 </body>

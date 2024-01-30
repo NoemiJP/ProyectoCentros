@@ -35,14 +35,17 @@
  
 
     ?>
-     <form method="POST" style="margin-top:20%;margin-left:40%;" action="login.php">
+     <form method="POST" style="margin-top:3%;height: 27vh;margin-left:40%;" action="login.php">
         <label for="usu">Usuario</label><br>
         <input type="text" name="usu" id="usu" /><br><br>
         <label for="pass">Contraseña</label><br>
         <input type="password" name="pass" id="pass" /><br><br>
         <input type="submit" value="Login">
     </form>
-
+    <?php
+    
+    include "elementosComunes/footer.php";
+    ?>
 </body>
 
 </html>
