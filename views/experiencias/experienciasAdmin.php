@@ -10,7 +10,11 @@
 </head>
 <body>
 <?php
-    include "../elementosComunes/barraSuperior.php"
+    include "../elementosComunes/barraSuperior.php";
+    
+    echo "<p style=\"height: 30vh;\"></p>";
+    include "../elementosComunes//footer.php";
     ?>
+
 </body>
 </html>

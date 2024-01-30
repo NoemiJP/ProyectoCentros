@@ -11,8 +11,8 @@
 </head>
 <header class="encabezado">
     <section>
-        <h1>BROTES VERDES</h1>
-        <h2>I.E.S BERNALDO DE QUIRÓS</h2>
+        <h1>AGUA, VIDA Y BIENESTAR</h1>
+        <h2>AGRUPACIÓN DE CENTROS ESCOLARES 2023</h2>
     </section>
 </header>
 

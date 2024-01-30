@@ -10,9 +10,17 @@
 </head>
 
 <body>
+<?php
+    include "../elementosComunes/barraSuperior.php";
+    ?>
+    <section>
+        <h1>IES Pasqual Calbó i Caldés (IPCC)</h1>
+    </section>
+
     <?php
-    include "../elementosComunes/barraSuperior.php"
-        ?>
+    echo "<p style=\"height: 30vh;\"></p>";
+    include "../elementosComunes//footer.php";
+    ?>
 </body>
 
 </html>
