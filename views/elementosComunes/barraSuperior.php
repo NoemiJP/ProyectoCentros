@@ -25,6 +25,7 @@
         <a class="inactive" href="/views/centros/ipcc.php">IPCC</a>
         <a class="inactive" href="/views/centros/ipjb.php">IPJB</a>
         <a class="inactive" href="/views/centros/imsis.php">IMSIS</a>
+        <a class="inactive" href="/views/experiencias/experiencias.php">Experiencias</a>
         <?php
         session_start();
         if (isset($_SESSION["usuario"])) {
@@ -34,7 +35,7 @@
             $usuarioLogueado = "Invitado";
         }
         if ($usuarioLogueado == "Invitado") {
-            echo "<a class=\"inactive\" href=\"login.php\">Iniciar Sesión</a>";
+            echo "<a class=\"inactive\" href=\"/views/login.php\">Iniciar Sesión</a>";
         } else {
             echo "<a class=\"inactive\">Hola " . $usuarioLogueado . "</a>";
         }

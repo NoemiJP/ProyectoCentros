@@ -9,12 +9,18 @@
     <script src="../../js/web.js"></script>
 </head>
 <body>
-<?php
+    <?php
     include "../elementosComunes/barraSuperior.php";
-    
-    echo "<p style=\"height: 30vh;\"></p>";
-    include "../elementosComunes//footer.php";
     ?>
+    <section>
+        <h1>Experiencias Administrador</h1>
+    </section>
+
+    <?php
+    echo "<p style=\"height: 30vh;\"></p>";
+    include "../elementosComunes/footer.php";
+    ?>
+</body>
 
 </body>
 </html>
