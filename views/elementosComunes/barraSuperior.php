@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../css/web.css" />
+    <script src="../../js/web.js"></script>
 </head>
 <header class="encabezado">
     <section>
@@ -18,11 +19,12 @@
 
 <body>
     <nav class="menu">
-        <a class="active" href="portada.html">Inicio</a>
-        <a class="inactive" href="agenda.html">Agenda</a>
-        <a class="inactive" href="actividades.html">Actividades</a>
-        <a class="inactive" href="galeria.html">Galería</a>
-        <a class="inactive" href="experiencias/experiencias.php">Experiencias</a>
+        <a class="active" href="../portada.php">Inicio</a>
+        <a class="inactive" href="/views/centros/EcoHuerto/html/portada.html">EcoHuerto</a>
+        <a class="inactive" href="/views/centros/ibcf.php">IBCF</a>
+        <a class="inactive" href="/views/centros/ipcc.php">IPCC</a>
+        <a class="inactive" href="/views/centros/ipjb.php">IPJB</a>
+        <a class="inactive" href="/views/centros/imsis.php">IMSIS</a>
         <?php
         session_start();
         if (isset($_SESSION["usuario"])) {
