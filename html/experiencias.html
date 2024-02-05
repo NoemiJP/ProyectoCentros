@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Experiencia Educativa</title>
+    <link rel="stylesheet" href="../css/experiencias.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Experiencia Educativa</h2>
+        <form action="" method="post">
+            <label for="nombre">Nombre y Apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="instituto">Selecciona tu Instituto:</label>
+            <select id="instituto" name="instituto" required>
+                <option value="">Seleccione un Instituto</option>
+                <option value="IBCF">IES Blas Cabrera Felipe (IBCF)</option>
+                <option value="IMSIS">INS Manresa SIS (IMSIS)</option>
+                <option value="IPCC">IES Pasqual Calbó i Caldés (IPCC)</option>
+                <option value="IPJB">IES Profesor Juan Bautista (IPJB)</option>
+                <option value="IBQ">IES Bernaldo de Quirós (IBQ)</option>
+            </select>
+
+            <label for="foto">Subir archivos:</label>
+            <input type="file" id="foto" name="foto">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
