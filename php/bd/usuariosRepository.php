@@ -11,6 +11,8 @@ class UsuariosRepository extends Conexion
         $this->conectaBD();
     }
 
+    /*Método que recibe dos parámetros, realiza una consulta en la base de datos, 
+    crea un objeto y retorna una array con los resultados*/
     public function recuperarUsuario($username, $password)
     {
         $personasObtenidas = array();

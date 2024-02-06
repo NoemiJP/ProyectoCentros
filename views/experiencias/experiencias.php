@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,15 +9,21 @@
     <link rel="stylesheet" href="../../css/web.css" />
     <script src="../../js/web.js"></script>
 </head>
+
 <body>
     <?php
+
+    //Iniciar y recuperar usuario
     session_start();
     $usuario = $_SESSION["usuario"];
-    if($usuario != null){
+
+    //Se comprueba si esta registrado y según esto se manda a la vista admin o inviatdo
+    if ($usuario != null) {
         header("Location: experienciasAdmin.php");
-    } else{
+    } else {
         header("Location: experienciasUsuario.php");
     }
     ?>
 </body>
+
 </html>

@@ -15,6 +15,8 @@
     <?php
     include "./elementosComunes/barraSuperior.php";
     include "../php/bd/usuariosRepository.php";
+
+    //Elimina la sesión de usuario, destruye toda la información y te redirige a la portada
     unset($_SESSION["usuario"]);
     session_destroy();
     header("Location:portada.php");

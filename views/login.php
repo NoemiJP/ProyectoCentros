@@ -15,6 +15,7 @@
     <?php
     include "./elementosComunes/barraSuperior.php";
     include "../php/bd/usuariosRepository.php";
+    
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_POST["usu"]) && isset($_POST["pass"])) {
             $usu = $_POST["usu"];

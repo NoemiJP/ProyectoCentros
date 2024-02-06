@@ -27,18 +27,23 @@
         <a class="inactive" href="/views/centros/imsis.php">IMSIS</a>
         <a class="inactive" href="/views/experiencias/experiencias.php">Experiencias</a>
         <?php
-        session_start();
-        if (isset($_SESSION["usuario"])) {
-            $usuarioLogueado = $_SESSION["usuario"];
-        } else {
+        session_start(); //Inicio sesión
 
-            $usuarioLogueado = "Invitado";
+        //Se verifica si existe "usuario" en sesión
+        if (isset($_SESSION["usuario"])) {
+            $usuarioLogueado = $_SESSION["usuario"]; //Si existe, crea el usuario logueado
+        } else {
+            $usuarioLogueado = "Invitado"; //Sino se da valor de usuario invitado
         }
+
+        //Si el usuario es invitado muestra un enlace para cerrar sesión sino mensaje de saludo
         if ($usuarioLogueado == "Invitado") {
             echo "<a class=\"inactive\" href=\"/views/login.php\">Iniciar Sesión</a>";
         } else {
             echo "<a class=\"inactive\">Hola " . $usuarioLogueado . "</a>";
         }
+
+        //Usuario no invitado, muestra enlace de cerrar sesión
         if ($usuarioLogueado != "Invitado") {
             echo "<a class=\"inactive\" href=\"/views/logout.php\">Cerrar Sesión</a>";
         }
